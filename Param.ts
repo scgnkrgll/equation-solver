@@ -12,12 +12,12 @@ export default class Param {
   }
 
   public set value(value: number | null) {
-    if (this._value !== value) return
+    if (this._value === value) return
     this.changed = true
     this._value = value
   }
 
-  constructor(name: string, reducable: boolean)
+  constructor(name: string, reducable?: boolean)
   constructor(name: string, value: number)
   constructor(name: string, valueOrReducable: number | boolean) {
     if (typeof valueOrReducable === 'boolean') {

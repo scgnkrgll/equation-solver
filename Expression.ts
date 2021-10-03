@@ -250,19 +250,19 @@ export default class Exp {
   }
 }
 
-const exp: Exp = new Exp(5)
-// console.log("First exp: ", exp, exp.isConst());
+// const exp: Exp = new Exp(5)
+// // console.log("First exp: ", exp, exp.isConst());
 
-const exp1: Exp = new Exp(new Param('x', true))
-// console.log("Second exp: ", exp1);
+// const exp1: Exp = new Exp(new Param('x', true))
+// // console.log("Second exp: ", exp1);
 
-// console.log("Addition: ", Exp.add(exp, exp1));
+// // console.log("Addition: ", Exp.add(exp, exp1));
 
-const negativeExp: Exp = new Exp(Op.Neg, new Exp(5), null)
+// const negativeExp: Exp = new Exp(Op.Neg, new Exp(5), null)
 
-const positiveExp: Exp = new Exp(Op.Pos, new Exp(5), null)
+// const positiveExp: Exp = new Exp(Op.Pos, new Exp(5), null)
 
-const addition: Exp = Exp.add(exp1, negativeExp)
+// const addition: Exp = Exp.add(exp1, negativeExp)
 
-console.log(Exp.add(Exp.mul(addition, positiveExp), positiveExp).toString())
-// wow it works! 👍
+// console.log(Exp.add(Exp.mul(addition, positiveExp), positiveExp).toString())
+// // wow it works! 👍
