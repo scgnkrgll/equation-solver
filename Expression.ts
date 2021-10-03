@@ -250,9 +250,6 @@ export default class Exp {
   }
 }
 
-// const exp: Exp = new Exp(5)
-// // console.log("First exp: ", exp, exp.isConst());
-
 // const exp1: Exp = new Exp(new Param('x', true))
 // // console.log("Second exp: ", exp1);
 
@@ -265,4 +262,3 @@ export default class Exp {
 // const addition: Exp = Exp.add(exp1, negativeExp)
 
 // console.log(Exp.add(Exp.mul(addition, positiveExp), positiveExp).toString())
-// // wow it works! 👍
